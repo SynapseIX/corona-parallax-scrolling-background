@@ -3,5 +3,5 @@ A horizontal parallax scrolling background implementation for Corona SDK. Suppor
 
 Any contributions are most welcome.
 
-#### Know Issues
+#### Known Issues
 For speeds greater than 8.0, the gaps start to appear and they grow over time. It might be my delta time implementation and I'm currently looking into it. Any help is much appreciated.
