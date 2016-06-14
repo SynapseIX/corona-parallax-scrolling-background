@@ -29,7 +29,7 @@ local function scroll(layer, event)
 	for i = 2, layers.numChildren do
 		local layer = layers[i]
 
-		if layer.x < display.contentCenterX + display.contentCenterX * 2 - layer.speed * dt then
+		if layer.x < display.contentCenterX + display.contentCenterX * 2 - layer.speed - (layer.speed * dt) then
 			layer.x = layers[i].x + layer.speed * dt
 		else
 			layer.x = -(display.contentWidth / 2) + layer.speed * dt
