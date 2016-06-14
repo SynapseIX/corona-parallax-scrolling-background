@@ -23,7 +23,7 @@ local function getDeltaTime()
 end
 
 -- Scrolls layers
-local function scroll(layer, event)
+local function scroll()
 	local dt = getDeltaTime()
 
 	-- Scroll all layers but the last one which is a static background
