@@ -1,5 +1,6 @@
 # Corona SDK Parallax Scrolling Background
 A horizontal parallax scrolling background implementation for Corona SDK. Supports multiple backgrounds and background randomization. It also compensate gaps between layers using delta time based on frame rate.
+
 Any contributions are most welcome.
 
 #### Know Issues
