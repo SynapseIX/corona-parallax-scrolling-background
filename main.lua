@@ -18,4 +18,7 @@ local layers = bgs[math.random(1, #bgs)]
 
 local parallax = require("parallax")
 parallax:init(layers, 8.0, 3.0)
-parallax:start()
+
+local startScrolling = function(event) parallax:start() end 
+timer.performWithDelay(500, startScrolling)
+
