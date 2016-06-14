@@ -26,7 +26,8 @@ end
 local function scroll(layer, event)
 	local dt = getDeltaTime()
 
-	for i = 1, layers.numChildren do
+	-- Scroll all layers but the last one which is a static background
+	for i = 2, layers.numChildren do
 		local layer = layers[i]
 
 		if layer.x < display.contentCenterX + display.contentCenterX * 2 - layer.speed - (layer.speed * dt) then
