@@ -93,7 +93,7 @@ function M:start()
 end
 
 function M:stop()
-
+	Runtime:removeEventListener("enterFrame", update)
 end
 
 return M
