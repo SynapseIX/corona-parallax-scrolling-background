@@ -30,7 +30,7 @@ local function scroll()
 	for i = 2, layers.numChildren do
 		local layer = layers[i]
 
-		if layer.x < display.contentCenterX + display.contentCenterX * 2 - layer.speed - (layer.speed * dt) then
+		if layer.x < display.contentCenterX + display.contentCenterX * 2 - layer.speed then
 			layer.x = layers[i].x + layer.speed * dt
 		else
 			layer.x = -(display.contentWidth / 2) + layer.speed * dt
@@ -55,7 +55,7 @@ function M:init(layerTable, maxSpeed, speedDecrement)
 	self.maxSpeed = maxSpeed
 	
 	for i = 1, #layerTable do
-		local layer = display.newImageRect(layerTable[i], display.contentWidth, display.contentHeight)
+		local layer = display.newImageRect(layerTable[i], display.contentWidth + maxSpeed, display.contentHeight)
 		layer.x = display.contentCenterX
 		layer.y = display.contentCenterY
 
